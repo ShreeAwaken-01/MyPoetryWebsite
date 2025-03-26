@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Page from the poetry website for KC College's special student">
+            <meta name="keywords" content="UNIQUE POEM, KC COLLEGE, MR WORDPLAYER, DUMBO29WALA">
+            <meta name="author" content="SHREE MANGESH AMBEKAR">
+            <title>Login - Poetry Website</title>
+        </head>
+        <body>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC College - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #002147;
+        }
+        .header img {
+            height: 80px;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #002147;
+            font-weight: bold;
+            padding: 8px;
+        }
+        .contact {
+            margin-right: 20px; /* Thoda left shift kiya */
+        }
+        .login-container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #002147;
+        }
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .info-box label {
+            font-weight: bold;
+        }
+        .info-box input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        .info-box input[readonly] {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        .password-box input {
+            background-color: white;
+        }
+        .enter-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #002147;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer img {
+            height: 50px;
+        }
+        .footer .hnsc-logo {
+            margin-right: 20px; /* Thoda left shift kiya */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://kccollege.edu.in/wp-content/uploads/2021/06/KCC-Logo-final.svg" alt="KC College Logo">
+        <div class="nav">
+            <a href="#">Prospectus</a>
+            <a href="#">Milestones</a>
+            <a href="#">Admissions</a>
+            <a href="#">Academics</a>
+            <a href="#">Student Support</a>
+            <a href="#" class="contact">Contact</a> <!-- Shifted left -->
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h2>Login Details</h2>
+        <p style="text-align:center; color: red;">Kindly check your login details before proceeding...</p>
+        <div class="info-box">
+            <label>Name:</label>
+            <input type="text" value="ZAHRA HUZAIFA TAMBAWALA" readonly>
+            <label>Stream:</label>
+            <input type="text" value="SYJC SCIENCE" readonly>
+            <label>Year:</label>
+            <input type="text" value="2023-2024" readonly>
+            <label>Percentage:</label>
+            <input type="text" value="82.83" readonly>
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button class="enter-btn" onclick="checkPassword()">Enter</button>
+    </div>
+
+    <div class="footer">
+        <img src="https://kccollege.edu.in/wp-content/uploads/2021/06/KCC-Logo-final.svg" alt="KC College Logo">
+        <p>Contact: studentsupport@kccollege.edu.in</p>
+        <img src="https://kccollege.edu.in/wp-content/uploads/2021/06/HSNCU-Logo.svg" alt="HNSC Logo" class="hnsc-logo"> <!-- Shifted left -->
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "21082006") {
+                window.location.href = "surprise.html";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+            <!-- Google Analytics Tracking -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-XXXXX-Y');
+            </script>
+        </body>
+        </html>
